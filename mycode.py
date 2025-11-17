@@ -11,7 +11,9 @@ df=pd.DataFrame(data)
 
 
 
-
+# CHANGE 01
+new_row_loc={ 'Name':"Nilu",'Age':'33','city':'CA'}
+df.loc[len(df.index)]=new_row_loc
 
 
 
