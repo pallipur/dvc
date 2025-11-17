@@ -1,0 +1,28 @@
+import pandas as pd
+import os
+
+#create a sample dataframe with column name
+
+data = {"Name":['Alice','Bob','Charlie'],
+        'Age':[25,30,45],
+        'city':['NY',"LA","TN"]}
+
+df=pd.DataFrame(data)
+
+
+
+
+
+
+
+#create folder
+data_dir = 'data'
+os.makedirs(data_dir,exist_ok=True)
+
+
+#save file in folder
+file_path =os.path.join(data_dir,"sample_data.csv")
+df.to_csv(file_path, index=False)
+
+print("csv file saved to{file_path}")
+
