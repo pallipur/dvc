@@ -16,6 +16,11 @@ new_row_loc={ 'Name':"Nilu",'Age':'33','city':'CA'}
 df.loc[len(df.index)]=new_row_loc
 
 
+#change 02
+new_row_loc={ 'Name':"priyanka",'Age':'27','city':'MS'}
+df.loc[len(df.index)]=new_row_loc
+
+
 
 #create folder
 data_dir = 'data'
